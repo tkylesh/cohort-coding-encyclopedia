@@ -42,7 +42,7 @@ Provide a regex that matches dates with the format: `MM/DD/YYYY`. Use named capt
 
 ```c#
 answer:
-
+/(?<month>\d{2})\/(?<day>\d{2})\/(?<year>\d{4})/
 ```
 
 Provide a regex that matches `function returnOne() {return 1;}` and captures the value returned.
