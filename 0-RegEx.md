@@ -21,7 +21,7 @@ Provide a regex that matches valid phone numbers with the forms `678-123-1122` a
 
 ```c#
 answer:
-
+.?\d{3,5}.+\d{3}.+\d{4}
 ```
 
 Provide a regex that matches URLs like `https://regex101.com`, `http://facebook.com` and `https://www.godaddy.com` but not `https://msdn.microsoft.com`. (Trailing `/` should be allowed and optional)
