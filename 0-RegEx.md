@@ -14,7 +14,7 @@ Provide three regexes that matches `yes yes yes` but not `no no no`
 
 ```c#
 answer:
-
+/[yes]{3} [yes]{3} [yes]{3}/
 ```
 
 Provide a regex that matches valid phone numbers with the forms `678-123-1122` and `(678) 123-1122` while still allowing symbols to be optional. HINT: Research the rules around valid phone numbers.
