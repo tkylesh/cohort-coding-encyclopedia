@@ -35,7 +35,7 @@ Provide a regex that matches dates with the format: `Wed Aug 11, 2013`.
 
 ```c#
 answer:
-\w{3} \w{3} \d{1,2}, \d{4}
+/\w{3} \w{3} \d{1,2}, \d{4}/
 ```
 
 Provide a regex that matches dates with the format: `MM/DD/YYYY`. Use named captures to extract Day, Month and Year.
