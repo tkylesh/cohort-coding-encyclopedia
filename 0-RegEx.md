@@ -63,7 +63,7 @@ Provide two regeesx that matches `Billy Jean` but not `billy jean`.
 
 ```c#
 answer:
-
+[A-Z]+\w*\s[A-Z]+\w*
 ```
 
 Provide two regexes that matches `NSS Evening Cohort 3` and captures "Cohort 3".
