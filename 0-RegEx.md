@@ -56,7 +56,7 @@ Provide a regex that matches `List<int> my_List = new List<int>();` and captures
 
 ```c#
 answer:
-
+List<int> (?<my_List>\w+) = new List<int>();
 ```
 
 Provide two regeesx that matches `Billy Jean` but not `billy jean`.
