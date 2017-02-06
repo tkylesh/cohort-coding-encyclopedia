@@ -49,7 +49,7 @@ Provide a regex that matches `function returnOne() {return 1;}` and captures the
 
 ```c#
 answer:
-
+ function \w+\(\) {return (?<value>\d+);}
 ```
 
 Provide a regex that matches `List<int> my_List = new List<int>();` and captures the variable name.
