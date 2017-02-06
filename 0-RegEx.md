@@ -28,7 +28,7 @@ Provide a regex that matches URLs like `https://regex101.com`, `http://facebook.
 
 ```c#
 answer:
-https:\w*\.com
+https:\w*\.com\/*
 ```
 
 Provide a regex that matches dates with the format: `Wed Aug 11, 2013`.
