@@ -70,42 +70,42 @@ Provide two regexes that matches `NSS Evening Cohort 3` and captures "Cohort 3".
 
 ```c#
 answer:
-
+/NSS Evening (?<name>\w{6} \d+)/
 ```
 
 Provide a regex that matches emails of the forms `first.last@example.com` and `something99@history.com`. Allow for numbers in the domain name as well as the email prefix. Capture the domain name.
 
 ```c#
 answer:
-
+\w*\.?\w+@(?<name>\w+\.com)
 ```
 
 Provide a regex (as if for a password checker), that enforces a password to have at least one symbol and one number.
 
 ```c#
 answer:
-
+(?=.*\W)(?=.*\d)[A-Za-z\d]{8,}
 ```
 
 Provide a regex that matches emails from the domains `.com`, `.org`, `.net`, `.io` and `.ly` but not `.biz` and `.com.uk`. This regex should capture the end result. (use #10 as a starting point).
 
 ```c#
 answer:
-
+\w*\.?\w+@(?<name>\w+\.[ac-z]\w*)
 ```
 
 Provide a regex that matches the entire [2nd paragraph of the Wikipedia page about John Lennon](https://en.wikipedia.org/wiki/John_Lennon).
 
 ```c#
 answer:
-
+Born and raised.*its release\.
 ```
 
 Provide a regex that matches the numbered exercises from this challenge.
 
 ```c#
 answer:
-
+Provide .*\d+.*\.
 ```
 
 Provide two regexes that matches the following C# code and captures the property names. (HINT: How could you match a newline?)
@@ -120,5 +120,5 @@ public class Part
 
 ```c#
 answer:
-
+public class \w+\n{\n.*public string (?<property1>\w+) {.*}\n.*public int (?<property2>\w+) {.*}\n}
 ```
